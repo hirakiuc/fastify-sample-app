@@ -5,6 +5,17 @@ const debug = require('debug')('fastify-test:controllers:healthcheck');
 const HealthCheckController = {
 
   /**
+   *  @swagger
+   *  /:
+   *    get:
+   *      description: Healthcheck
+   *      produces:
+   *        - application/json
+   *      responses:
+   *        200:
+   *          description: Healthcheck
+   */
+  /**
    * @api {get} / Healthcheck
    * @apiVersion 1.0.0
    * @apiName Healthcheck

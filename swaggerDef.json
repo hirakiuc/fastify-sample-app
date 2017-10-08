@@ -1,0 +1,9 @@
+{
+  "info": {
+    "title": "fastify-test app API",
+    "version": "1.0.0"
+  },
+  "apis": [
+    "./src/controllers/**/*.js"
+  ]
+}

@@ -7,7 +7,8 @@
     "start": "dotenv nodemon ./bin/www",
     "eslint": "eslint . --ext .js",
     "docs": "apidoc -i src/controllers -o docs/",
-    "clean": "rm -rf ./docs"
+    "swdocs": "swagger-jsdoc -d ./swaggerDef.json -o ./swagger.json",
+    "clean": "rm -rf ./docs ./swagger.json"
   },
   "dependencies": {
     "apidoc": "^0.17.6",
@@ -20,7 +21,8 @@
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "dotenv-cli": "^1.4.0",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "swagger-jsdoc": "^1.9.7"
   },
   "eslintConfig": {
     "extends": "leonis"
