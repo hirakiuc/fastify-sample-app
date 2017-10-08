@@ -3,7 +3,6 @@
 const debug = require('debug')('fastify-test:helpers:routes');
 
 const Router = {
-
   route: (app, routers, prefix = '') => {
     routers.forEach((router) => {
       if (router.routes instanceof Array) {
@@ -22,7 +21,7 @@ const Router = {
     for (const route of app) {
       for (const path of Object.keys(route)) {
         for (const method of Object.keys(route[path])) {
-          console.log(`${method.toUpperCase()} ${path}`);
+          debug(`--> ${method.toUpperCase()} ${path}`);
         }
       }
     }
